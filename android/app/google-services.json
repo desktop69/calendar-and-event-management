@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "604958701776",
+    "project_id": "workingtimo",
+    "storage_bucket": "workingtimo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604958701776:android:50349b103ba7b850dc06d5",
+        "android_client_info": {
+          "package_name": "com.example.caldr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604958701776-qim3m17qd9g88rdkrhfnktf7gr0c7lee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzOeUM2befbFuY4QpxJ5Y30IPN4HknnlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604958701776-qim3m17qd9g88rdkrhfnktf7gr0c7lee.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "604958701776-njp6jcc0hr5oeou3glc95kjpd21qr50p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.saad.mathBooking"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604958701776:android:c91ac8d96f9ce9bedc06d5",
+        "android_client_info": {
+          "package_name": "com.example.workingfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604958701776-qim3m17qd9g88rdkrhfnktf7gr0c7lee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzOeUM2befbFuY4QpxJ5Y30IPN4HknnlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604958701776-qim3m17qd9g88rdkrhfnktf7gr0c7lee.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "604958701776-njp6jcc0hr5oeou3glc95kjpd21qr50p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.saad.mathBooking"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604958701776:android:e6a69caa78ada956dc06d5",
+        "android_client_info": {
+          "package_name": "net.saad.math_booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604958701776-qim3m17qd9g88rdkrhfnktf7gr0c7lee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzOeUM2befbFuY4QpxJ5Y30IPN4HknnlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604958701776-qim3m17qd9g88rdkrhfnktf7gr0c7lee.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "604958701776-njp6jcc0hr5oeou3glc95kjpd21qr50p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.saad.mathBooking"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

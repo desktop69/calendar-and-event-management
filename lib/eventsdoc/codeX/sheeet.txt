@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+class EventServices {
+   // the var used to make acces to the data base ;
+  final CollectionReference _event =
+      FirebaseFirestore.instance.collection('eventcrud');
+
+
+
+
+
+//  List<Events> eventl = [];
+
+//   @override
+//   void initState() {
+//     fetchRecords();
+//     super.initState();
+//   }
+
+//   fetchRecords() async {
+//     // the var used to make acces to the data base ;
+//     var records =
+//         await FirebaseFirestore.instance.collection('eventcrud').get();
+//     mapRecords(records);
+//   }
+
+  // mapRecords(QuerySnapshot<Map<String, dynamic>> records) {
+  //   var _list = records.docs
+  //       .map((item) => Events(
+  //           id: item.id,
+  //           title: item['title'],
+  //           date: item['date'],
+  //           description: item['description'],
+  //           public: item['public']))
+  //       .toList();
+  //   setState(() {
+  //     eventl = _list;
+  //   });
+  // }
+
+
+
+
+}
