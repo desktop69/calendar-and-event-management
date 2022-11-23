@@ -2,9 +2,10 @@ import 'package:caldr/eventsdoc/add_even.dart';
 import 'package:caldr/eventsdoc/codeX/events.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatefulWidget {  
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -12,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   CalendarFormat _calendarFormat = CalendarFormat.week;
   DateTime _focusedDay = DateTime.now();
-  DateTime? _selectedDay;
+  DateTime? _selectedDay = DateTime.now();
 
   // the var used to make acces to the data base ;
   final CollectionReference _event =
@@ -83,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                 if (streamSnapshot.hasData) {
                   return ListView.builder(
                     shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: streamSnapshot.data!.docs.length,
                     itemBuilder: (context, index) {
                       final DocumentSnapshot documentSnapshot =
@@ -92,7 +93,11 @@ class _HomePageState extends State<HomePage> {
                         margin: const EdgeInsets.all(10),
                         child: ListTile(
                           title: Text(documentSnapshot['name']),
-                          subtitle: Text(documentSnapshot['date'].toString()),
+                          // subtitle: Text(documentSnapshot['date'].toString()),
+                          subtitle: Text((DateFormat("EEEE, dd MMMM, yyyy")
+                                  .format(documentSnapshot['date']))
+                              .toString()),
+                          //documentSnapshot['date'].toString()
                           trailing: SizedBox(
                             width: 100,
                             child: Row(
@@ -134,7 +139,7 @@ class _HomePageState extends State<HomePage> {
               context,
               MaterialPageRoute(
                   builder: (context) =>
-                      AddEvents(selectDate: _selectedDay as DateTime)))
+                      AddEvents(selectDate: _selectedDay as DateTime))),
         },
       ),
     );

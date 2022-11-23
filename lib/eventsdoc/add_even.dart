@@ -1,10 +1,10 @@
-import 'package:caldr/eventsdoc/event_services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:intl/intl.dart';
 
 import 'codeX/event_services.dart';
+import 'home_page.dart';
 
 class AddEvents extends StatefulWidget {
   final DateTime selectDate;
@@ -36,20 +36,16 @@ class _AddEventsState extends State<AddEvents> {
                 // save event here dady :)
                 bool validated = _formKey.currentState!.validate();
                 _formKey.currentState!.save();
-                print("dahhhhhhhhhhhhhhhhhhhhhhh");
-
                 final data =
                     Map<String, dynamic>.from(_formKey.currentState!.value);
                 data['date'] =
-                    (data['date'] as DateTime).microsecondsSinceEpoch;
-                print(data);
-                print("name issssssssssss");
-                print(data['title']);
-                print("date issssssssssss");
-                print(data['date']);
-                // here budy you can do ittt
-
-                EventServices().create(data['title'], data['date']);
+                    DateTime.parse(data['date']).microsecondsSinceEpoch;
+                if (data.isNotEmpty) {
+                  EventServices().create(data['title'], data['date']);
+                  // EventServices().createe(data);
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                }
               },
               child: const Text("Save"),
             ),
